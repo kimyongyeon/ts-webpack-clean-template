@@ -13,7 +13,9 @@ module.exports = {
     extensions: [".tsx", ".ts", ".js", ".html", ".css"]
   },
   plugins: [
+    // html 소스에 포함하고 reload 
     new HtmlWebpackPlugin({template: './src/index.html'}),
+    // 브라우저에서 ts파일 수정시 실시간 reload
     new WebpackBrowserPlugin()
   ],
   module: {
