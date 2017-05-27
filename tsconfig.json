@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "sourceMap": true,
+        "rootDir": "src",
+        "outDir": "dist",
+        "removeComments": true,
+        "noImplicitAny": false,
+        "preserveConstEnums": true,
+        "experimentalDecorators": true,
+        "allowJs": false,
+        "jsx": "react",
+        "lib": [
+            "dom",
+            "es2015",
+            "es5"
+        ]
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
