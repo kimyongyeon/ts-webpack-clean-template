@@ -1,6 +1,9 @@
+"use strict";
+
 var path = require("path");
 const WebpackBrowserPlugin = require('webpack-browser-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: "./src/index.ts",
@@ -16,7 +19,8 @@ module.exports = {
     // html 소스에 포함하고 reload 
     new HtmlWebpackPlugin({template: './src/index.html'}),
     // 브라우저에서 ts파일 수정시 실시간 reload
-    new WebpackBrowserPlugin()
+    new WebpackBrowserPlugin(),
+    new ExtractTextPlugin('[name].css')
   ],
   module: {
     loaders: [
