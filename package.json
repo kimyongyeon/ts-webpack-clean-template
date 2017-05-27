@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server --config webpack.config.dev.js",
     "build": "webpack --config webpack.config.prod.js",
-    "build-dev": "webpack --config webpack.config.dev.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-dev": "webpack --config webpack.config.dev.js"
   },
   "author": "",
   "license": "ISC",
@@ -27,6 +26,8 @@
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.1",
     "html-webpack-plugin": "^2.28.0",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.3",
     "node-sass": "^4.5.3",
     "path": "^0.12.7",
     "sass": "^0.5.0",
@@ -40,7 +41,6 @@
     "url-loader": "^0.5.8",
     "webpack": "^2.6.1",
     "webpack-browser-plugin": "^1.0.20",
-    "webpack-dev-server": "^2.4.5",
-    "wepback": "^1.0.0"
+    "webpack-dev-server": "^2.4.5"
   }
 }

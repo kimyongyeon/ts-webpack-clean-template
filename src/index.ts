@@ -1,5 +1,5 @@
-import "./css/style.css";
-import "./img/5.png";
+import "./css/style.less";
+// import "./img/5.png";
 
 export class Main {
     constructor() {
